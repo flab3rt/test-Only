@@ -1,0 +1,255 @@
+/* Стили делались под экран 1920 х 1080, при clientHeight 955. Адаптация писалась только под изменение ширины, как было указано в задании */
+
+body {
+    margin: 0; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main */
+.main {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background: url("./images/1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.main::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Button */
+.button__main {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    z-index: 1000;
+}
+
+.button__main:hover {
+    border: 2px solid #3877EE;
+}
+
+.button__content {
+    display: none;
+}
+
+.button__content:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+}
+
+.button__text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 15px;
+    display: block;
+}
+
+
+/* Классы */
+.blue {
+    background: rgba(56, 119, 238, 0.7);
+}
+
+.green {
+    background: rgba(106, 191, 75, 0.7);
+}
+
+.active {
+    width: 111px;
+    height: 40px;
+}
+
+/* Для каждой отдельной кнопки */
+.btn1 {
+    top: 77.4%;
+    left: 18.2%;
+}
+
+.btn2 {
+    top: 25%;
+    left: 29.6%;
+}
+
+.btn3 {
+    top: 43%;
+    left: 35.7%;
+}
+
+.btn4 {
+    top: 58.6%;
+    left: 56.3%;
+}
+
+.btn5 {
+    top: 78%;
+    left: 57.6%;
+}
+
+.btn6 {
+    top: 36.3%;
+    left: 59.7%;
+}
+
+.btn7 {
+    top: 62.4%;
+    left: 68%;
+}
+
+.btn8 {
+    top: 16%;
+    left: 71.5%;
+}
+
+.btn9 {
+    top: 42.6%;
+    left: 73.6%;
+}
+
+.btn10 {
+    top: 69.1%;
+    left: 82.9%;
+}
+
+/* Media */
+@media (max-width: 1720px) {
+    .btn1 {
+        left: 16.2%;
+    }
+
+    .btn2 {
+        left: 27.6%;
+        top: 26%;
+    }
+
+    .btn3 {
+        left: 33.7%;
+    }
+
+    .btn4 {
+        left: 56%;
+    }
+
+    .btn6 {
+        top: 37.3%;
+        left: 58.7%;
+    }
+
+    .btn8 {
+        top: 17%;
+    }
+}
+
+@media (max-width: 1630px) {
+    .btn1 {
+        left: 15.2%;
+    }
+
+    .btn8 {
+        left: 73.5%;
+    }
+
+    .btn10 {
+        left: 85.9%;
+    }
+}
+
+@media (max-width: 1530px) {
+    .btn1 {
+        left: 12.2%;
+    }
+
+    .btn2 {
+        left: 24.6%;
+    }
+
+    .btn6 {
+        left: 59.7%;
+    }
+
+    .btn8 {
+        left: 75.5%;
+    }
+
+    .btn9 {
+        left: 75.6%;
+    }
+
+    .btn10 {
+        left: 87.9%;
+    }
+}
+
+@media (max-width: 1430px) {
+    .btn1 {
+        left: 10%;
+    }
+
+    .btn4 {
+        left: 57%;
+    }
+
+    .btn7 {
+        left: 70%;
+    }
+
+    .btn8 {
+        left: 77%;
+    }
+
+    .btn9 {
+        left: 77.6%;
+    }
+
+    .btn10 {
+        left: 89.9%;
+    }
+}
+
+@media (max-width: 1330px) {
+    .btn1 {
+        left: 7%;
+    }
+
+    .btn2 {
+        left: 21.6%;
+    }
+
+    .btn7 {
+        left: 71%;
+    }
+
+    .btn8 {
+        left: 79%;
+    }
+
+    .btn9 {
+        left: 79.6%;
+    }
+
+    .btn10 {
+        left: 90.9%;
+    }
+}
